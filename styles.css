@@ -20,11 +20,10 @@
 }
 .button:hover{
     transform: translateY(-3px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 .icon{
     width: 20px;
-    aspect-ratio: 1/1;
+    height: 20px;
     margin-right: 10px;
 }
 .card{
@@ -68,12 +67,17 @@ nav{
 header{
     grid-area: 1 / 2 / 2 / -1;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr 2fr;
+    font-weight: 600;
+    gap: 6px;
 }
 main{
     grid-area: 2 / 2 / -1 / -1;
 }
 #dash-icon{
     width: 30px;
+    height: 30px;
 }
 ul{
     margin-top: 40px;
@@ -83,4 +87,8 @@ ul{
 }
 li{
     margin: 9px;
+}
+.profile{
+    width: 30px;
+    height: 30px;
 }

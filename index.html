@@ -8,7 +8,7 @@
 <body class="grid-container">
     <nav class="flex-container">
         <div class="flex-container" style="justify-content: flex-start; gap: 10px;">
-            <img src="images/dashboard.png" alt="Dashboard" id="dash-icon" class="icon">
+            <img src="images/dashboard.png" alt="Dashboard" id="dash-icon">
             <h1>Dashboard</h1>
         </div>
         <ul>
@@ -24,7 +24,26 @@
             <li class="flex-container"><img src="images/insurance.png"  class="icon">Privacy</li>
         </ul>
     </nav>
-    <header></header>
+    <header class="grid-container">
+        <div class="flex-container" style="justify-content: space-between; grid-area: 1 / 1 / 2 / 7; padding: 9px; align-items: center;">
+            <img src="images/search-interface-symbol (1).png" class="icon">
+            <img src="images/bell.png" class="icon">
+        </div>
+        <div class="flex-container" style="gap: 10px; grid-area: 1 / 7 / 2 / -1; padding: 9px; align-items: center; padding-left: 15px;">
+            <img src="images/profile (1).png" class="profile">
+            <span>Lorem ipsum</span>
+        </div>
+        <div class="flex-container" style="grid-area: 2 / 1 / -1 / 4;padding: 9px; align-items: center; gap: 10px;">
+            <img src="images/profile (1).png" class="profile" style="width: 50px; height: 50px;">
+            <span>
+                <span style="font-size: 13px;">Hi there,</span><br>
+                Lorem ipsum (@lorem)
+            </span>
+        </div>
+        <button class="button" style="grid-area: 2 / 6  / -1 / 7 ; align-self: center;">New</button>
+        <button class="button" style="grid-area: 2 / 7  / -1 / 8 ; align-self: center;">Upload</button>
+        <button class="button" style="grid-area: 2 / 8  / -1 / -1 ; align-self: center;">Share</button>
+    </header>
     <main></main>
 </body>
 </html>
