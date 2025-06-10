@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+}
+.grid-container{
+    display: grid;
+}
+.button{
+    background-color: #1c94d3;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    color: white;
+    border: none;
+    transition: all 0.6s ease;
+}
+.button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.icon{
+    width: 15px;
+    aspect-ratio: 1/1;
+}
+.card{
+    width: 340px;
+    height: 230px;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 7px solid #e3b030;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 1fr 3fr 1fr;
+}
+.card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.card-title{
+    grid-area: 1 / 1 / 2 / -1;
+}
+.card-body{
+    grid-area: 2 / 1 / 3 / -1;
+}
+.card-reactions{
+    grid-area: 3 / 5 / 4 / -1;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+nav{
+    background-color: #1c94d3;
+    grid-area: 1 / 1 / -1 / 2 ;
+}
+header{
+    grid-area: 1 / 2 / 2 / -1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+main{
+    grid-area: 2 / 2 / -1 / -1;
+}
